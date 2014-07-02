@@ -1,0 +1,5 @@
+<% if node[:gitconfig] %>
+[user]
+    name = <%= node[:gitconfig][:name] %>
+    email = <%= node[:gitconfig][:email] %>
+<% end %>

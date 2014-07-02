@@ -1,3 +1,4 @@
+include_recipe "ubuntu-mongo-node::users"
 include_recipe "nodejs"
 include_recipe "nodejs::npm"
 include_recipe "mongodb::10gen_repo"
