@@ -1,0 +1,10 @@
+name             'ubuntu-mongo-node'
+maintainer       'David Karam'
+maintainer_email 'david@posttool.com'
+license          'MIT'
+description      'Node/Mongo small setup'
+version          '0.1.0'
+
+depends 'git'
+depends 'nodejs'
+depends 'mongodb'

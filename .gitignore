@@ -1,0 +1,7 @@
+.idea
+.cache
+.ssh
+.vagrant
+.bash_history
+.dbshell
+.mongorc.js
