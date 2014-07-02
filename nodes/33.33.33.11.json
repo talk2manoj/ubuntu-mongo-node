@@ -1,0 +1,18 @@
+{
+  "hostname": "33.33.33.11",
+  "user": "noder",
+  "node_env": "production",
+  "mongodb": {
+    "package-version": "2.6.3"
+  },
+  "nodejs": {
+    "version": "0.10.29"
+  },
+
+  "run_list": [
+    "recipe[ubuntu-mongo-node::default]"
+  ]
+}
+
+
+
