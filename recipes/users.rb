@@ -1,22 +1,26 @@
 # User, directories, etc -----------------------------------------------------
 
-group node[:user] do
-    gid 1337
-end
+if node[:user] != "vagrant"
 
-user node[:user] do
-    username node[:user]
-    comment "Application User"
-    gid 1337
-    uid 9999
-    shell "/bin/bash"
-    home "/home/#{node[:user]}"
-end
+    group node[:user] do
+        gid 1337
+    end
 
-directory "/home/#{node[:user]}" do
-    owner node[:user]
-    group node[:user]
-    mode 0755
+    user node[:user] do
+        username node[:user]
+        comment "Application User"
+        gid 1337
+        uid 9999
+        shell "/bin/bash"
+        home "/home/#{node[:user]}"
+    end
+
+    directory "/home/#{node[:user]}" do
+        owner node[:user]
+        group node[:user]
+        mode 0755
+    end
+
 end
 
 directory "/home/#{node[:user]}/.ssh" do

@@ -33,9 +33,13 @@ SCRIPT
   config.vm.provision :chef_solo do |chef|
     chef.json = {
       :hostname => "xxx",
-      :user => "xxx",
+      :user => "vagrant",
+      :node_env => "development",
       :mongodb => {
         "package-version" => "2.6.3"
+      },
+      :nodejs => {
+        :version => "0.10.29"
       }
     }
     chef.run_list = [

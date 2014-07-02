@@ -1,6 +1,6 @@
 # Development
 
-VirtualBox Vagrant Chef Drupal install
+VirtualBox Vagrant Chef Mongo Node install
 
 
 # How
@@ -18,23 +18,9 @@ VirtualBox Vagrant Chef Drupal install
 
 5. Add this line to your /etc/hosts (or windows equivalent):
 
-    33.33.33.10        ccsf
+    33.33.33.10        xxxx
 
-
-
-
-That's it, files in "public" are served here : [http://ccsf/](http://ccsf/)
 
 To connect to the console of you instance:
     `vagrant ssh`
-
-
-
---------
-
-You can add `XDEBUG_PROFILE` to your GET parameter to generate an xdebug profile, e.g. [http://ccsf/?XDEBUG_PROFILE](http://ccsf/?XDEBUG_PROFILE)
-
-You can then investigate at [http://ccsf/webgrind/](http://ccsf/webgrind/)
-
-
 
